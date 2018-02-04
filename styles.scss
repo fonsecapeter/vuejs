@@ -1,4 +1,12 @@
-body {
-  background: steelblue;
-  color: white;
+.index {
+  display: flex;
+  justify-content: center;
+  padding: 80px;
+
+  &-message {
+    background: steelblue;
+    border-radius: 4px;
+    color: white;
+    padding: 80px;
+  }
 }
