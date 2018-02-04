@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+set -eu -o pipefail
+
+docker run \
+  --mount type=bind,source=$(pwd)/dist,target=/app/dist \
+  --mount type=bind,source=$(pwd)/src,target=/app/src \
+  --mount type=bind,source=$(pwd)/templates,target=/app/templates \
+  -p 1234:1234 \
+  -p 1235:1235 \
+  vuejs-ts-parcel

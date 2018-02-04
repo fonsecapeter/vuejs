@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+set -eu -o pipefail
+
+tput setaf 5
+printf 'Building image\n'
+tput setaf 4
+printf "  => "
+tput sgr0
+printf 'Only need to do this on your first time or after '
+tput setaf 4
+printf '`bin/clean`\n'
+tput sgr0
+
+docker build --tag vuejs-ts-parcel .

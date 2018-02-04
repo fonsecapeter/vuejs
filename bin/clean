@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+set -eu -o pipefail
+
+tput setaf 3
+printf '!! Cleaning up image and generated files !!\n'
+tput sgr0
+
+rm -rf node_modules
+rm -rf dist/*
+docker system prune --force

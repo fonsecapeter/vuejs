@@ -1,10 +1,10 @@
+# Vuejs + TypeScript + Sass
+
 Messing around with the new js frameworks
 
+## Dependencies
+  - Docker
 
-```bash
-  npm init
-  npm install --save-dev \
-    parcel-bundler \
-    node-sass \
-    autoprefixer
-```
+## Development
+  - `bin/build`
+  - `bin/start`
