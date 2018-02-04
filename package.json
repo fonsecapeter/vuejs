@@ -1,5 +1,5 @@
 {
-  "name": "vuejs",
+  "name": "vuejs-ts-parcel",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,6 +11,8 @@
   "devDependencies": {
     "autoprefixer": "^7.2.5",
     "node-sass": "^4.7.2",
-    "parcel-bundler": "^1.5.1"
+    "parcel-bundler": "^1.5.1",
+    "parcel-plugin-typescript": "^0.5.3",
+    "typescript": "^2.7.1"
   }
 }
