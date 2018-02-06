@@ -1,9 +1,11 @@
 import './styles/styles.scss';
+import Vue from 'vue';
+import AppVue from './app.vue';
+import logWithEmoji from './utils/console_log.ts';
 
-function logWithEmoji(message: string) {
-  const emojis = ['🎉', '📦', '🎊'];
-  const randomEmoji = emojis[Math.floor(Math.random() * emojis.length)];
-  console.log(`${message} ${randomEmoji}`);
-}
+new Vue({
+  el: '#app',
+  render: h => h(AppVue),
+});
 
 logWithEmoji('Hello from the typescripts!');
