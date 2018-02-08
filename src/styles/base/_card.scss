@@ -1,0 +1,21 @@
+@mixin card {
+  border-radius: 3px;
+  box-shadow: 0 1px 2px $shadow-color;
+  padding: 80px 200px;
+}
+
+@mixin card-interactive {
+  @include card;
+  cursor: pointer;
+  transition: box-shadow .25s ease-in-out, transform .2s ease-in-out;
+
+  &:hover {
+    box-shadow: 0 6px 6px $shadow-color;
+    transform: scale(1.01);
+  }
+
+  &:active {
+    box-shadow: 0 2px 4px $shadow-color;
+    transform: scale(1.005);
+  }
+}
